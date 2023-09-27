@@ -330,6 +330,19 @@ bottom: -60px;
     align-items: center;
     display: none;
 
+
+}
+/* Cầu nối */
+.header__menu-list-container::after{
+    position: absolute;
+    content: "";
+    top: -20px;
+    left: -10px;
+    height: 30px;
+    width: 410px;
+
+    display: block;
+
 }
 
 .header__menu-list{
@@ -371,6 +384,115 @@ bottom: -60px;
     color: var(--primary-color-2);
     font-weight: 500
 }
+/* Combobox lựa chọn PC, máy in */
+
+.header__menu-option::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 100%;
+    left: 40px;
+    border-bottom: 10px solid var(--white-color);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+
+}
+.header__menu-option{
+    position: absolute;
+    top: 110%;
+    left: -10px;
+    background-color: var(--white-color);
+    display: block;
+    min-width: 140px;
+    display: none;
+    border-radius: 5px;
+}
+
+.header__menu-option::after{
+    content: "";
+    height: 20px;
+    width: 140px;
+    position: absolute;
+    top: -10px;
+    left: -5px;
+    
+}
+.header__menu-option-list{
+    list-style-type: none;
+    padding: 6px 10px;
+}
+
+.header__menu-option-item{
+    
+}
+.header__menu-option-item-link{
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.4rem;
+    padding: 8px 0;
+    text-decoration: none;
+    position: relative;
+}
+.header__menu-has-list:hover .header__menu-option{
+    display: block;
+}
+.header__menu-option-item-link:hover{
+   
+    right: -3px;
+    color: var(--primary-color-2);
+    font-weight: 500;
+}
+/* List dịch vụ tiện ích */
+.header__menu-list-container-1{
+    position: absolute;
+    top: 110%;
+    right: 0;
+    min-width: 160px;
+    
+    background-color: var(--white-color);
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+}
+
+.header__menu-list-container-1::before{
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    right: 10%;
+    border-bottom: 10px solid var(--white-color);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.header__menu-list-1{
+    list-style-type: none;
+    min-width: 160px;
+}
+.header__menu-list-1-heading{
+    display: inline-block;
+
+    text-transform: uppercase;
+    /* font-size: 1.3rem; */
+    font-weight: 700;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.header__menu-list-1-item{
+}
+
+.header__menu-1-link{
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.4rem;
+    padding: 8px 0;
+}
+
 .container{
     height: 1000px;
     background-color: #ccc;
