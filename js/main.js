@@ -28,3 +28,25 @@ headerSearchInput.addEventListener('blur', function(e){
     headerSearchHistory.classList.remove('active');
     headerSearchHistory.classList.add('inactive');
 })
+
+// Show address form
+
+const showAddressFormBtn = document.querySelector('.js-show-header__address');
+const modal = document.querySelector('.modal');
+const closeAddressFormBtn = document.querySelector('.js-modal-close-address-form');
+console.log(showAddressFormBtn);
+console.log(closeAddressFormBtn);
+
+function showAddressForm(e){
+    e.stopPropagation();
+    e.preventDefault();
+    modal.classList.add('open');
+}
+   
+function closeAddressForm(e){
+    e.stopPropagation();
+    e.preventDefault();
+    modal.classList.remove('open');
+}
+showAddressFormBtn.addEventListener('click', showAddressForm);
+closeAddressFormBtn.addEventListener('click', closeAddressForm);
