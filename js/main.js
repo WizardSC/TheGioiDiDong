@@ -8,6 +8,7 @@ console.log(btnClose)
 console.log(headerSearchHistory)
 console.log(headerSearchInput)
 headerSearchInput.onclick = function(e){
+    console.log('xin chao')
     headerSearchHistory.classList.remove('inactive')
     headerSearchHistory.classList.add('active');
 }
