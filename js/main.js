@@ -24,11 +24,11 @@ headerSearchHistory.onclick = function(e){
     e.preventDefault();
 }
 
-headerSearchInput.addEventListener('blur', function(e){
-    e.stopPropagation();
-    headerSearchHistory.classList.remove('active');
-    headerSearchHistory.classList.add('inactive');
-})
+// headerSearchInput.addEventListener('blur', function(e){
+//     e.stopPropagation();
+//     headerSearchHistory.classList.remove('active');
+//     headerSearchHistory.classList.add('inactive');
+// })
 
 // Show address form
 
